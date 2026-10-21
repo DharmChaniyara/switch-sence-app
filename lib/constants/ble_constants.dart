@@ -2,14 +2,14 @@
 class BleConstants {
   BleConstants._();
 
-  /// 128-bit Custom GATT Service UUID
-  static const String serviceUuid = '4fafc201-1fb5-459e-8fcc-c5c9c331914b';
+  /// 128-bit Custom GATT Service UUID (matches ESP32 firmware)
+  static const String serviceUuid = '6e8f0001-b5a3-f393-e0a9-e50e24dcca9e';
 
   /// Characteristic for App -> ESP32 Commands (Write / Write Without Response)
-  static const String commandCharUuid = 'beb5483e-36e1-4688-b7f5-ea07361b26a8';
+  static const String commandCharUuid = '6e8f0002-b5a3-f393-e0a9-e50e24dcca9e';
 
   /// Characteristic for ESP32 -> App Relay State (Read + Notify)
-  static const String stateCharUuid = '1c95d5e3-d8f7-413a-bf3d-7a2e5d7be87e';
+  static const String stateCharUuid = '6e8f0003-b5a3-f393-e0a9-e50e24dcca9e';
 
   /// Default advertised device name
   static const String defaultDeviceName = 'ESP32-Relay-8';
